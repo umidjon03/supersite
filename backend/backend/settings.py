@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     
     'clients',
     'articles',
-    'portfolio'
+    'portfolio',
+    'contact'
 ]
 
 MIDDLEWARE = [
