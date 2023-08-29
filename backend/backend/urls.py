@@ -25,4 +25,5 @@ urlpatterns = [
     path("articles/",include("articles.urls")),
     path("portfolio/",include("portfolio.urls")),
     path("contact/",include("contact.urls")),
+    path("qwiz/",include("qwiz.urls")),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
