@@ -1,1 +1,38 @@
+// Montserrat
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+// Circe
+@font-face {
+  font-family: "Circe";
+  font-weight: 100;
+  src: url("../assets/fonts/Circe/Circe-100.woff") format("woff"),
+    url("../assets/fonts/Circe/Circe-100.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Circe";
+  font-weight: 300;
+  src: url("../assets/fonts/Circe/Circe-300.woff") format("woff"),
+    url("../assets/fonts/Circe/Circe-300.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Circe";
+  font-weight: 400;
+  src: url("../assets/fonts/Circe/Circe-400.woff") format("woff"),
+    url("../assets/fonts/Circe/Circe-400.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Circe";
+  font-weight: 700;
+  src: url("../assets/fonts/Circe/Circe-700.woff") format("woff"),
+    url("../assets/fonts/Circe/Circe-700.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Circe";
+  font-weight: 800;
+  src: url("../assets/fonts/Circe/Circe-800.woff") format("woff"),
+    url("../assets/fonts/Circe/Circe-800.woff2") format("woff2");
+}
