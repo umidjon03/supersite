@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'rest_framework',
     
     'clients',
-    'articles'
+    'articles',
+    'portfolio'
 ]
 
 MIDDLEWARE = [
