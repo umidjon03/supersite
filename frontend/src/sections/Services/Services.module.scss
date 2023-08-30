@@ -1,0 +1,55 @@
+.services {
+  padding-bottom: 150px;
+}
+
+.services__heading {
+  margin: 0;
+  margin-bottom: 74px;
+
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 36px;
+}
+
+.services__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: stretch;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.service__card {
+  height: 100%;
+  padding-top: 80px;
+  padding-bottom: 64px;
+
+  text-align: center;
+}
+
+.service__heading {
+  margin: 0;
+  margin-bottom: 28px;
+
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 32px;
+}
+
+.service__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.service__list__item {
+  font-family: "Circe", "Montserrat", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+
+  & + & {
+    margin-top: 20px;
+  }
+}
