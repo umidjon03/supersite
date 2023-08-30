@@ -1,0 +1,29 @@
+@import "../../styles/variables";
+
+.header {
+  padding-top: 55px;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo__icon {
+  margin-right: 23px;
+}
+
+.header__logo__text {
+  font-size: 28px;
+  font-weight: 300;
+
+  strong {
+    font-weight: 800;
+  }
+}

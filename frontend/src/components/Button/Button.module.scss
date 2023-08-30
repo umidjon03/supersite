@@ -1,0 +1,29 @@
+@import "../../styles/variables";
+
+.button {
+  display: block;
+  padding: 20px 36px;
+
+  font-style: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  color: $white;
+
+  border-radius: 50px;
+  background-color: $primary;
+  border: none;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: $primary-hover;
+  }
+
+  &:active {
+    background-color: $primary-active;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+}
