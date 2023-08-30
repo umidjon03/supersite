@@ -12,7 +12,11 @@ export const Layout = ({ children, className }) => {
   const { isOpen } = useMenu();
 
   return (
-    <div className={cn(styles.layout, className)}>
+    <div
+      className={cn(styles.layout, className, {
+        [styles["layout--menu"]]: isOpen,
+      })}
+    >
       {isOpen && <Menu />}
 
       <Header className={cn(styles.header)} />
