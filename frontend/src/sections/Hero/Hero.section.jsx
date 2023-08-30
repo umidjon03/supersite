@@ -35,10 +35,17 @@ export const Hero = () => {
             </Button>
           </div>
 
-          <Switch isActive={isActive} onClick={() => setActive(!isActive)} />
+          <Switch
+            className={cn(styles.hero__switch)}
+            isActive={isActive}
+            onClick={() => setActive(!isActive)}
+          />
         </div>
 
-        <div className={cn(styles.hero__image)}>
+        <div
+          className={cn(styles.hero__image)}
+          onClick={() => setActive(!isActive)}
+        >
           <img src={isActive ? BulbOn : BulbOff} alt="bulb" />
         </div>
       </Container>

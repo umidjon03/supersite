@@ -2,7 +2,13 @@ import cn from "classnames";
 
 import styles from "./Switch.module.scss";
 
-export const Switch = ({ disabled, isActive, onClick, ...props }) => {
+export const Switch = ({
+  className,
+  disabled,
+  isActive,
+  onClick,
+  ...props
+}) => {
   const handleSpace = (e) => {
     if (e.code !== "Space") return;
     onClick();
@@ -10,7 +16,7 @@ export const Switch = ({ disabled, isActive, onClick, ...props }) => {
 
   return (
     <div
-      className={cn(styles.wrapper, {
+      className={cn(styles.wrapper, className, {
         [styles["switch--active"]]: isActive,
       })}
     >
