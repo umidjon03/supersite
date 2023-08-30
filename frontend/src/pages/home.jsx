@@ -1,11 +1,11 @@
-import { Hero } from "../sections";
-import { Services } from "../sections/Services/Services.section";
+import { Hero, Services, Portfolio } from "../sections";
 
 export const Home = () => {
   return (
     <>
       <Hero />
       <Services />
+      <Portfolio />
     </>
   );
 };
