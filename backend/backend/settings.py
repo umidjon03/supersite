@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     "portfolio",
     "contact",
     "qwiz",
+    "blog",
 ]
 
 MIDDLEWARE = [
