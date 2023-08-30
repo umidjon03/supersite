@@ -4,13 +4,17 @@ import { BrowserRouter } from "react-router-dom";
 
 import App from "./App";
 
+import { MenuProvider } from "./context/menu.context";
+
 import "./styles/general.scss";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <MenuProvider>
+        <App />
+      </MenuProvider>
     </BrowserRouter>
   </React.StrictMode>
 );

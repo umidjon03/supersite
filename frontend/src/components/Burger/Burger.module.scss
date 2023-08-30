@@ -41,8 +41,13 @@
   margin-right: 11px;
 
   font-size: 22px;
+  line-height: 28px;
   font-style: normal;
   font-weight: 700;
+}
+
+.burger__status {
+  width: 28px;
 }
 
 .burger__icon {
@@ -82,6 +87,10 @@
     font-size: 14px;
   }
 
+  .burger__status {
+    width: 22px;
+  }
+
   .burger__icon {
     width: 22px;
 
@@ -97,5 +106,10 @@
     &::after {
       height: 2px;
     }
+  }
+
+  .burger__close {
+    width: 16px;
+    height: 16px;
   }
 }
