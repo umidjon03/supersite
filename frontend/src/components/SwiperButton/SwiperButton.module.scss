@@ -1,0 +1,56 @@
+@import "../../styles/variables";
+
+.button {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  margin: -5px;
+  height: 20px;
+
+  color: inherit;
+
+  background-color: transparent;
+  border: none;
+
+  transition: color 0.1s ease;
+  cursor: pointer;
+
+  &--right {
+    svg {
+      transform: rotate(180deg);
+    }
+  }
+
+  &--active {
+    color: inherit;
+  }
+
+  &:disabled {
+    color: #9ca2ae;
+
+    cursor: no-drop;
+
+    .button__circle {
+      opacity: 0 !important;
+    }
+  }
+}
+
+.button__circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 20px;
+  height: 20px;
+
+  background-color: $primary;
+  border-radius: 50%;
+
+  pointer-events: none;
+
+  transition: opacity 0.1s ease;
+}
