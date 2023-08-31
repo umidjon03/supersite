@@ -16,6 +16,7 @@ function MarketingService() {
       });
     }
   });
+
   return (
     <div className="services">
       <div className="services-list">

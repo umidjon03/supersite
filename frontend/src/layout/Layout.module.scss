@@ -9,6 +9,10 @@
     "footer";
 
   overflow: hidden;
+
+  &--menu {
+    max-height: 100vh;
+  }
 }
 
 .header {
