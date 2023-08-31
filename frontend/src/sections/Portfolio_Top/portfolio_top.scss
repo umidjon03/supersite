@@ -16,8 +16,8 @@
       font-size: 16px;
       border-bottom: 2px dotted;
       transition: 0.3s;
-      &:hover{
-        color: #45A6FF;
+      &:hover {
+        color: #45a6ff;
       }
     }
   }
@@ -31,6 +31,12 @@
       align-items: center;
       gap: 20px;
       padding-bottom: 30px;
+    }
+  }
+  .blog-top {
+    .portfolio-top-links {
+      flex-direction: row;
+      flex-wrap: wrap;
     }
   }
 }
