@@ -1,4 +1,4 @@
-import { Hero, Services, Portfolio, Customers } from "../sections";
+import { Hero, Services, Portfolio, Customers, Directions } from "../sections";
 
 export const Home = () => {
   return (
@@ -7,6 +7,7 @@ export const Home = () => {
       <Services />
       <Portfolio />
       <Customers />
+      <Directions />
     </>
   );
 };
