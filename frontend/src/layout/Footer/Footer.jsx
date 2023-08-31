@@ -27,7 +27,8 @@ export const Footer = () => {
 
         <div className={cn(styles.footer__right)}>
           <span>
-            © 1999-{new Date().getFullYear()} Интернет-компания DidgiKey
+            © 1999-{new Date().getFullYear()} Интернет-компания{" "}
+            <strong>DidgiKey</strong>
           </span>
           <span>Информация на сайте не является публичной офертой</span>
           <span>Актуальные цены уточняйте у менеджеров</span>
