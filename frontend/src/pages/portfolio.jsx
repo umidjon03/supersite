@@ -15,7 +15,7 @@ function Portfolio() {
         order="1"
         type="internet magzin"
         img=""
-        summary=""
+        txt=""
       />
     </div>
   );

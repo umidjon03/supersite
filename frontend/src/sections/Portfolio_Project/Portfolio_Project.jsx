@@ -5,7 +5,7 @@ import ProjectImg from "../../assets/images/macbook-23 1portfolio-project-img.pn
 
 import "./portfolio_project.scss";
 
-function Portfolio_Project({ namee, order }) {
+function Portfolio_Project({ order, type, title, yuid, img, txt }) {
   return (
     <div className="portfolio-project">
       <div className="project-info">
