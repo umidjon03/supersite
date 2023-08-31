@@ -1,0 +1,214 @@
+.offers{
+  padding: 80px 20px;
+  .offers-title{
+    font-size: 50px;
+  }
+  .offers-cards{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    .offers-cards-card{
+      width: 24%;
+      background-color: #fff;
+      padding: 10px 20px 20px;
+      .card-title{
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+      .card-list{
+        .card-list-item{
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          .list-item-txt{
+            font-size: 15px;
+            margin:10px 0;
+          }
+          .stroke{
+            width: 16px;
+            max-width: 16px;
+            min-width: 16px;
+          }
+        }
+      }
+      .card-bottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+        .card-cost{
+          font-size: 24px;
+          font-weight: 400;
+        }
+        .card-button{
+          padding: 15px 25px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:1250px) {
+  .offers{
+    .offers-cards{
+      .offers-cards-card{
+        .card-title{
+          font-size: 20px;
+        }
+        .card-bottom{
+          .card-cost{
+            font-size: 20px;
+          }
+          .card-button{
+            padding: 12px 20px;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width:1100px) {
+  .offers{
+    .offers-cards{
+      flex-wrap: wrap;
+      gap: 36px;
+      .offers-cards-card{
+        width: 48%;
+        .card-title{
+          font-size: 24px;
+        }
+        .card-bottom{
+          .card-cost{
+            font-size: 24px;
+          }
+          .card-button{
+            padding: 15px 30px;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width:960px) {
+  .offers{
+    .offers-cards{
+      flex-wrap: wrap;
+      gap: 36px;
+      .offers-cards-card{
+        width: 47%;
+        .card-title{
+          font-size: 24px;
+        }
+        .card-bottom{
+          .card-cost{
+            font-size: 24px;
+          }
+          .card-button{
+            padding: 15px 30px;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width:700px) {
+  .offers{
+    .offers-title{
+      font-size: 40px;
+    }
+    .offers-cards{
+      flex-wrap: wrap;
+      gap: 36px;
+      .offers-cards-card{
+        width: 47%;
+        .card-title{
+          font-size: 20px;
+        }
+        .card-bottom{
+          .card-cost{
+            font-size: 20px;
+          }
+          .card-button{
+            padding: 12px 20px;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width:660px) {
+  .offers{
+    .offers-cards{
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      .offers-cards-card{
+        width: 67%;
+        .card-title{
+          font-size: 24px;
+        }
+        .card-bottom{
+          .card-cost{
+            font-size: 24px;
+          }
+          .card-button{
+            padding: 15px 25px;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width:560px) {
+  .offers{
+    .offers-cards{
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 36px;
+      .offers-cards-card{
+        width: 87%;
+        .card-title{
+          font-size: 24px;
+        }
+        .card-bottom{
+          .card-cost{
+            font-size: 24px;
+          }
+          .card-button{
+            padding: 15px 25px;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width:450px) {
+  .offers{
+    .offers-cards{
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 36px;
+      .offers-cards-card{
+        width: 100%;
+        .card-title{
+          font-size: 24px;
+        }
+        .card-bottom{
+          .card-cost{
+            font-size: 24px;
+          }
+          .card-button{
+            padding: 15px 25px;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
