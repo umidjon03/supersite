@@ -79,7 +79,19 @@
   }
 }
 
-@media only screen and (max-width: 1120px) {
+@media only screen and (max-width: 1140px) {
+  .services__container {
+    &::before {
+      bottom: -150px;
+      left: -180px;
+
+      width: 790px;
+      height: 527px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1140px) {
   .services__list {
     display: flex;
     flex-wrap: wrap;
@@ -95,6 +107,16 @@
 @media only screen and (max-width: 550px) {
   .services {
     padding-bottom: 60px;
+  }
+
+  .services__container {
+    &::before {
+      bottom: calc(-60px - 397px + 114px);
+      left: -260px;
+
+      width: 596px;
+      height: 397px;
+    }
   }
 
   .services__heading {
