@@ -78,3 +78,56 @@
     margin-top: 20px;
   }
 }
+
+@media only screen and (max-width: 1120px) {
+  .services__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .service {
+    max-width: 450px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .services {
+    padding-bottom: 60px;
+  }
+
+  .services__heading {
+    margin-bottom: 33px;
+
+    font-size: 22px;
+    line-height: 22px;
+    text-align: center;
+  }
+
+  .service {
+    max-width: 350px;
+    width: 100%;
+  }
+
+  .service__card {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .service__heading {
+    margin-bottom: 30px;
+
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .service__list__item {
+    font-size: 14px;
+    line-height: 14px;
+
+    & + & {
+      margin-top: 14px;
+    }
+  }
+}
