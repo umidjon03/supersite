@@ -162,6 +162,16 @@
 }
 
 @media only screen and (max-width: 550px) {
+  .customers__container {
+    &::after {
+      top: -48px;
+      left: -20px;
+
+      width: 596px;
+      height: 397px;
+    }
+  }
+
   .customers__heading {
     font-size: 22px;
     line-height: 22px;
