@@ -7,6 +7,7 @@ import Portfolio from "./pages/portfolio";
 import Marketing from "./pages/marketing";
 import Blog from "./pages/blog";
 import Audit from "./pages/audit";
+import Contacts from "./pages/contacts";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/marketing" element={<Marketing />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/audit" element={<Audit />} />
+        <Route path="/contacts" element={<Contacts />} />
       </Routes>
     </Layout>
   );
