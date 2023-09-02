@@ -1,0 +1,95 @@
+@import "../../styles/variables";
+
+.link {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  text-decoration: none;
+  color: inherit;
+
+  &__inner {
+    display: block;
+    padding-bottom: 3px;
+  }
+
+  &__count {
+    margin-left: 8px;
+
+    font-weight: 400;
+
+    opacity: 0.5;
+  }
+
+  &--primary {
+    color: $primary;
+  }
+
+  &--upper {
+    line-height: 20px;
+    text-transform: uppercase;
+
+    .link__text {
+      padding-bottom: 0;
+    }
+  }
+
+  &--big {
+    font-size: 18px;
+    line-height: 18px;
+
+    .link__text {
+      padding-bottom: 2px;
+    }
+  }
+
+  &--active {
+    color: $primary;
+
+    .link__count {
+      opacity: 1 !important;
+    }
+  }
+
+  &::after {
+    content: "";
+
+    display: block;
+    width: 100%;
+    height: 2px;
+
+    background: url("../../assets/icons/dot.svg");
+    background-size: 4px 2px !important;
+    background-position: bottom left !important;
+    background-repeat: repeat-x !important;
+
+    transition: width 0.1s ease;
+  }
+
+  &--primary-dot {
+    &::after {
+      background: url("../../assets/icons/dot-primary.svg");
+    }
+  }
+
+  &--light-primary-dot {
+    &::after {
+      background: url("../../assets/icons/dot-primary.svg");
+
+      opacity: 0.5;
+    }
+  }
+
+  &:hover {
+    color: $primary;
+
+    &::after {
+      width: 0%;
+    }
+  }
+
+  &:active {
+    &::after {
+      width: 50%;
+    }
+  }
+}

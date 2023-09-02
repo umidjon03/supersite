@@ -1,7 +1,7 @@
 import React from "react";
 
 import { Button } from "../../components";
-import ProjectImg from "../../assets/images/macbook-23 1portfolio-project-img.png";
+import ProjectImg from "../../assets/images/macbook.png";
 
 import "./portfolio_project.scss";
 

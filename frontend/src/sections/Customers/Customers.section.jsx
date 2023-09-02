@@ -11,7 +11,6 @@ import CustomerImage from "../../assets/images/customer.svg";
 
 import styles from "./Customers.module.scss";
 import "swiper/scss";
-import "swiper/scss/navigation";
 
 export const Customers = () => {
   const navigationPrevRef = React.useRef(null);

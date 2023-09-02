@@ -6,3 +6,77 @@
 
   background-color: $white;
 }
+
+.portfolio__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.portfolio__heading {
+  margin: 0;
+
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 36px;
+}
+
+.portfolio__info {
+  position: relative;
+
+  padding: 50px;
+  margin: -50px;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    width: 50px;
+    height: 100%;
+
+    background: linear-gradient(
+      90deg,
+      rgba($color: $white, $alpha: 1),
+      rgba($color: $white, $alpha: 0)
+    );
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+
+    width: 50px;
+    height: 100%;
+
+    background: linear-gradient(
+      -90deg,
+      rgba($color: $white, $alpha: 1),
+      rgba($color: $white, $alpha: 0)
+    );
+  }
+}
+
+.portfolio__swiper {
+  overflow: visible !important;
+}
+
+.portfolio__navigation {
+  position: absolute;
+  bottom: 80px;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  grid-area: navigation;
+}

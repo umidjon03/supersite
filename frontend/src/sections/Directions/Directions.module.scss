@@ -6,3 +6,54 @@
 
   background-color: $white;
 }
+
+.directions__container {
+  display: grid;
+  grid-template-columns: auto 1fr 2px 1fr auto;
+  grid-template-areas: "heading . stroke . info";
+  align-items: center;
+
+  &::before {
+    content: "";
+
+    grid-area: stroke;
+    height: 100%;
+
+    background-color: rgba($color: $black, $alpha: 0.2);
+  }
+}
+
+.directions__heading {
+  grid-area: heading;
+  margin: 0;
+
+  font-size: 72px;
+  font-weight: 800;
+  line-height: 72px;
+  text-transform: uppercase;
+
+  span {
+    display: block;
+  }
+
+  span:first-child {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  span:last-child {
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 300;
+  }
+}
+
+.directions__inner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: start;
+  align-items: center;
+  column-gap: 80px;
+  row-gap: 28px;
+  grid-area: info;
+}

@@ -1,0 +1,44 @@
+@import "../../styles/variables";
+
+.project {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project__info {
+  padding-bottom: 40px;
+}
+
+.project__type {
+  display: block;
+  margin-bottom: 12px;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+
+  opacity: 0.5;
+}
+
+.project__title {
+  margin: 0;
+  margin-bottom: 12px;
+
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.project__description {
+  max-width: 500px;
+  margin: 0;
+  margin-bottom: 22px;
+
+  font-family: "Circe", "Montserrat", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 130%;
+
+  color: $text-gray;
+}
