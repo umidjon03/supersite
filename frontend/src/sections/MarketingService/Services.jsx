@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 
 import ServiceImg from "../../assets/images/img_blockmarketing-service.png";
+import ServiceBgImg from "../../assets/images/Vectormarketing-service-bg.png";
 
 import "./services.scss";
 
@@ -19,6 +20,7 @@ function MarketingService() {
 
   return (
     <div className="services">
+      <img src={ServiceBgImg} alt="" className="services-bg" />
       <div className="services-list">
         <div className="services-list-item services-list-item-open">
           <h1 className="list-item-title">SMM</h1>

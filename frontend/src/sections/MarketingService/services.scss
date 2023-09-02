@@ -3,8 +3,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  overflow: hidden;
+  .services-bg{
+    position: absolute;
+    height: 100%;
+    right: 0;
+    top: 0;
+  }
   .services-list {
     width: 40%;
+    z-index: 5;
     .services-list-item {
       transition: 0.4s;
       .list-item-txt {
@@ -27,6 +36,7 @@
     }
   }
   .services-img {
+    z-index: 5;
     width: 45%;
     img {
       width: 100%;
@@ -57,6 +67,13 @@
 }
 @media (max-width: 767px) {
   .services {
+    .services-bg{
+      position: absolute;
+      height: 600px;
+      width: 400px;
+      right: 0;
+      top: 0;
+    }
     flex-direction: column;
     .services-img {
       order: 1;
@@ -71,6 +88,7 @@
 }
 @media (max-width: 500px) {
   .services {
+    
     .services-img {
       width: 100%;
     }

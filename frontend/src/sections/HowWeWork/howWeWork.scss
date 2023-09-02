@@ -1,6 +1,7 @@
 .wework {
   padding: 60px 20px 100px;
   background-color: #fff;
+  z-index: 999;
   &-txt {
     width: 90%;
   }
@@ -37,6 +38,8 @@
     }
   }
 }
+
+
 
 @media (max-width:1200px) {
   .wework{

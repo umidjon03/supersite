@@ -3,12 +3,14 @@ import React from "react";
 import { Button } from "../../components";
 
 import HeroImg from "../../assets/images/image 76 1marketing-hero.png";
+import HeroBg from "../../assets/images/Vectormarketing-bg.png";
 
 import "./marketing_hero.scss";
 
 function Marketing_Hero() {
   return (
     <div className="marketing-hero">
+      <img src={HeroBg} alt="" className="marketing-bg" />
       <div className="marketing-hero-info">
         <h4 className="info-top">PERFORMANCE MARKETING</h4>
         <h1 className="info-title">Попадем в цель?</h1>
