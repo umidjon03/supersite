@@ -5,6 +5,7 @@
   align-items: center;
   .project-info {
     width: 45%;
+    z-index: 5;
     .project-summary {
       line-height: 26px;
     }
@@ -12,6 +13,7 @@
   .project-img {
     width: 48%;
     max-width: 100%;
+    z-index: 5;
     img {
       width: 100%;
     }

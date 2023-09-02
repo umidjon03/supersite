@@ -2,12 +2,22 @@
   padding: 80px 20px;
   .offers-title{
     font-size: 50px;
+    transform: scale(1);
+  }
+  position: relative;
+  .offers-bg{
+    position: absolute;
+    left: -20px;
+    top: 0;
+    z-index: 0;
+    width: 70%;
   }
   .offers-cards{
     display: flex;
     justify-content: space-between;
     margin-top: 80px;
     .offers-cards-card{
+      z-index: 5;
       width: 24%;
       background-color: #fff;
       padding: 10px 20px 20px;
@@ -116,6 +126,9 @@
 }
 @media (max-width:700px) {
   .offers{
+    .offers-bg{
+      width: 90%;
+    }
     .offers-title{
       font-size: 40px;
     }
@@ -190,6 +203,12 @@
 }
 @media (max-width:450px) {
   .offers{
+    .offers-bg{
+      width: 150%;
+    }
+    .offers-title{
+      font-size: 36px;
+    }
     .offers-cards{
       flex-wrap: wrap;
       justify-content: center;

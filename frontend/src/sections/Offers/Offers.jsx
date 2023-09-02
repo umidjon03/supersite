@@ -2,12 +2,14 @@ import React from "react";
 
 import Stroke from "../../assets/images/Vector 1 (Stroke) (Stroke)stroke.png";
 import { Button } from "../../components";
+import BgImg from "../../assets/images/Vectoroffers-bg.png";
 
 import "./offers.scss";
 
 function Offers() {
   return (
     <div className="offers">
+      <img src={BgImg} alt="" className="offers-bg" />
       <h1 className="offers-title">
         Наши <br /> предложения
       </h1>
