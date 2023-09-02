@@ -1,13 +1,22 @@
 @import "../../styles/variables";
 
 .project {
+  position: relative;
+  z-index: 2;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
 
-.project__info {
-  padding-bottom: 40px;
+  &--nav {
+    .project__info {
+      padding-bottom: 40px;
+    }
+  }
+
+  &--reverse {
+    flex-direction: row-reverse;
+  }
 }
 
 .project__type {
@@ -41,4 +50,26 @@
   line-height: 130%;
 
   color: $text-gray;
+}
+
+.project__comp {
+  position: relative;
+  overflow: hidden;
+}
+
+.project__comp__macbook {
+  pointer-events: none;
+  user-select: none;
+}
+
+.project__comp__image {
+  position: absolute;
+  top: 8%;
+  left: 12%;
+  z-index: -1;
+
+  width: 76%;
+  height: 82%;
+  object-fit: cover;
+  object-position: top left;
 }

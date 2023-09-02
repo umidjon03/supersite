@@ -4,19 +4,30 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 
 import { useMediaQuery } from "../../hooks/useMediaQuery";
+import { getCustomers } from "../../api/customers";
 
 import { Card, Container, SwiperButton } from "../../components";
-
-import CustomerImage from "../../assets/images/customer.svg";
 
 import styles from "./Customers.module.scss";
 import "swiper/scss";
 
 export const Customers = () => {
+  const [customers, setCustomers] = React.useState([]);
+
   const navigationPrevRef = React.useRef(null);
   const navigationNextRef = React.useRef(null);
 
   const isMobile = useMediaQuery("(max-width:768px)");
+
+  React.useEffect(() => {
+    (async () => {
+      const { data: customers } = await getCustomers();
+
+      if (customers) {
+        setCustomers(customers);
+      }
+    })();
+  }, []);
 
   return (
     <section className={cn(styles.customers)}>
@@ -48,35 +59,23 @@ export const Customers = () => {
             }}
             grabCursor
           >
-            <SwiperSlide className={cn(styles.customers__swiper__slide)}>
-              <Card className={cn(styles.customer)}>
-                <img src={CustomerImage} alt="" width={180} />
-              </Card>
-            </SwiperSlide>
-
-            <SwiperSlide className={cn(styles.customers__swiper__slide)}>
-              <Card className={cn(styles.customer)}>
-                <img src={CustomerImage} alt="" width={180} />
-              </Card>
-            </SwiperSlide>
-
-            <SwiperSlide className={cn(styles.customers__swiper__slide)}>
-              <Card className={cn(styles.customer)}>
-                <img src={CustomerImage} alt="" width={180} />
-              </Card>
-            </SwiperSlide>
-
-            <SwiperSlide className={cn(styles.customers__swiper__slide)}>
-              <Card className={cn(styles.customer)}>
-                <img src={CustomerImage} alt="" width={180} />
-              </Card>
-            </SwiperSlide>
-
-            <SwiperSlide className={cn(styles.customers__swiper__slide)}>
-              <Card className={cn(styles.customer)}>
-                <img src={CustomerImage} alt="" width={180} />
-              </Card>
-            </SwiperSlide>
+            {!!customers.length &&
+              customers.map((customer) => (
+                <SwiperSlide
+                  className={cn(styles.customers__swiper__slide)}
+                  key={customer.id}
+                >
+                  <Card className={cn(styles.customer)}>
+                    <div className={cn(styles.customer__inner)}>
+                      <img
+                        src={customer.photo}
+                        alt={customer.name}
+                        width={180}
+                      />
+                    </div>
+                  </Card>
+                </SwiperSlide>
+              ))}
           </Swiper>
         </div>
       </Container>

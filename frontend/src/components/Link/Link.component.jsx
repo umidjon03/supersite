@@ -30,7 +30,9 @@ export const Link = ({
       <span className={cn(styles.link__inner)}>
         <span className={cn(styles.link__text)}>{children}</span>
 
-        {count && <span className={cn(styles.link__count)}>{count}</span>}
+        {!!(count + 1) && (
+          <span className={cn(styles.link__count)}>{count}</span>
+        )}
       </span>
     </ReactLink>
   );

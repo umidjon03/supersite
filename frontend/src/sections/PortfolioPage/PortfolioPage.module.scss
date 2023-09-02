@@ -1,0 +1,62 @@
+@import "../../styles/variables";
+
+.portfolio__top {
+  padding-bottom: 36px;
+
+  border-bottom: 1px solid rgba($color: $black, $alpha: 0.2);
+}
+
+.portfolio__top__container {
+  position: relative;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: -150px;
+    right: -500px;
+    z-index: -1;
+
+    width: 1263px;
+    height: 842px;
+
+    background-image: url("../../assets/images/pixels.svg");
+  }
+}
+
+.portfolio__heading {
+  margin: 0;
+  margin-bottom: 36px;
+
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 36px;
+  text-align: center;
+}
+
+.portfolio__nav {
+  display: block;
+  text-align: center;
+}
+
+.projects {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.project {
+  padding: 150px 0;
+
+  &:nth-child(2n) {
+    background-color: $white;
+  }
+
+  & + &:nth-child(2n - 1) {
+    background-image: url("../../assets/images/pixels.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: -240px;
+  }
+}
