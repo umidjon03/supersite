@@ -104,6 +104,12 @@
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .services__heading {
+    text-align: center;
+  }
+}
+
 @media only screen and (max-width: 550px) {
   .services {
     padding-bottom: 60px;
@@ -124,7 +130,6 @@
 
     font-size: 22px;
     line-height: 22px;
-    text-align: center;
   }
 
   .service {
