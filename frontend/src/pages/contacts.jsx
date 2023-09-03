@@ -1,13 +1,13 @@
 import React from "react";
 
-import ContactsHero from "../sections/ContactsHero/ContactsHero";
+import { ContactsHero } from "../sections";
 
-function Contacts() {
+const Contacts = () => {
   return (
     <>
       <ContactsHero />
     </>
   );
-}
+};
 
 export default Contacts;

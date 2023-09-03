@@ -9,3 +9,5 @@ export * from "./Button/Button.component";
 export * from "./SwiperButton/SwiperButton.component";
 export * from "./Link/Link.component";
 export * from "./PageNav/PageNav.component";
+
+export * from "./ContactForm/ContactForm.component";

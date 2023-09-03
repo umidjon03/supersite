@@ -1,24 +1,11 @@
 import React from "react";
-import { useForm } from "react-hook-form";
 
-import { postContact } from "../../api/contact";
-
-import { Button, Modal } from "../../components";
+import { Button, ContactForm, Modal } from "../../components";
 
 import "./contacts-hero.scss";
 
-function ContactsHero() {
+export const ContactsHero = () => {
   const [isOpen, setIsOpen] = React.useState(false);
-
-  const { register, handleSubmit, reset } = useForm();
-
-  const onSubmit = async (formData) => {
-    const { data } = await postContact(formData);
-
-    if (data) {
-      reset();
-    }
-  };
 
   return (
     <section className="contacts">
@@ -27,36 +14,7 @@ function ContactsHero() {
         isOpen={isOpen}
         setIsOpen={setIsOpen}
       >
-        <h2 className="modal-title">Обратная связь</h2>
-
-        <p className="modal-txt">
-          Наши менеджеры с радостью ответят на все ваши вопросы
-        </p>
-
-        <form onSubmit={handleSubmit(onSubmit)}>
-          <input
-            {...register("name", { required: true })}
-            type="text"
-            placeholder="Имя"
-          />
-          <input
-            {...register("phone", { required: true })}
-            type="text"
-            placeholder="Телефон"
-          />
-          <input
-            {...register("email", { required: true })}
-            type="email"
-            placeholder="E-mail"
-          />
-          <textarea
-            {...register("comment")}
-            cols="30"
-            rows="6"
-            placeholder="Здесь могут быть ваши комментарии"
-          ></textarea>
-          <Button className="modal-btn">Отправить</Button>
-        </form>
+        <ContactForm />
       </Modal>
 
       <div className="contacts-info">
@@ -76,6 +34,4 @@ function ContactsHero() {
       </div>
     </section>
   );
-}
-
-export default ContactsHero;
+};
