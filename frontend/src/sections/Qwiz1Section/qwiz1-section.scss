@@ -1,0 +1,73 @@
+.qwiz1-section{
+  padding: 0 20px 100px;
+  .form{
+    .cards{
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        z-index: 999;
+        .img{
+          height: 70px;
+          img{
+            height: 100%;
+          }
+        }
+        .input{
+          display: flex;
+          gap: 5px;
+          align-items: center;
+        }
+      }
+    }
+    .form-btn{
+      margin-top: 70px;
+      transform: scale(1);
+    }
+    .form-link{
+      text-decoration: none;
+    }
+  }
+}
+
+@media (max-width:900px) {
+  .qwiz1-section{
+    .form{
+      .cards{
+        gap: 20px;
+      }
+    }
+  }
+}
+@media (max-width:767px) {
+  .qwiz1-section{
+    .form{
+      .cards{
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        row-gap: 50px;
+        .card{
+          width: 48%;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+@media (max-width:550px) {
+  .qwiz1-section{
+    .form{
+      .cards{
+        row-gap: 50px;
+        .card{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
