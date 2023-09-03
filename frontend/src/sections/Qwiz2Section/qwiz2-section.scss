@@ -21,4 +21,94 @@
       }
     }
   }
+  .btns{
+    display: flex;
+    gap: 20px;
+    margin-top: 80px;
+    .link{
+      text-decoration: none;
+      z-index: 999;
+    }
+    .prev{
+      background-color: transparent;
+      border: 1px solid #3B4252;
+      color: #3B4252;
+    }
+  }
+}
+
+@media (max-width:850px) {
+  .qwiz2-section{
+    .cards{
+      gap: 20px;
+      .card{
+        .img{
+          height: 130px;
+        }
+      }
+    }
+  }
+}
+@media (max-width:676px) {
+  .qwiz2-section{
+    .cards{
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      .card{
+        .img{
+          height: 130px;
+        }
+      }
+    }
+    .btns{
+      justify-content: center;
+      .prev,.next{
+        font-size: 14px;
+        padding: 16px 25px;
+      }
+    }
+  }
+}
+@media (max-width:450px) {
+  .qwiz2-section{
+    .cards{
+      gap: 26px;
+      .card{
+        align-items: center;
+        .img{
+          height: 150px;
+        }
+      }
+    }
+    .btns{
+      justify-content: center;
+      gap: 10px;
+      .prev,.next{
+        font-size: 12px;
+        padding: 12px 15px;
+      }
+    }
+  }
+}
+@media (max-width:350px) {
+  .qwiz2-section{
+    .cards{
+      gap: 26px;
+      .card{
+        align-items: center;
+        .img{
+          height: 150px;
+        }
+      }
+    }
+    .btns{
+      justify-content: center;
+      gap: 10px;
+      .prev,.next{
+        font-size: 11px;
+        padding: 10px 12px;
+      }
+    }
+  }
 }
