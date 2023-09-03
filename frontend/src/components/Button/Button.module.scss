@@ -1,7 +1,9 @@
 @import "../../styles/variables";
 
 .button {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   padding: 20px 36px;
 
   font-size: 16px;
