@@ -92,3 +92,29 @@
 .button {
   margin: 0 auto;
 }
+
+@media only screen and (max-width: 550px) {
+  .wrapper {
+    max-width: 300px;
+  }
+
+  .heading {
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  .description {
+    margin-bottom: 22px;
+
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .input {
+    font-size: 12px;
+
+    &--textarea {
+      margin-bottom: 20px;
+    }
+  }
+}

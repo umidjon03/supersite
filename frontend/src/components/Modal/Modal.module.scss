@@ -13,6 +13,7 @@
   justify-content: center;
   width: 100vw;
   height: 100vh;
+  padding: 20px;
 }
 
 .modal__back {
@@ -48,4 +49,22 @@
   background-color: transparent;
 
   cursor: pointer;
+}
+
+@media only screen and (max-width: 550px) {
+  .modal__inner {
+    position: relative;
+
+    padding: 20px;
+    padding-top: 46px;
+    padding-bottom: 30px;
+
+    background-color: $white;
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.15);
+  }
+
+  .modal__button {
+    top: 14px;
+    right: 14px;
+  }
 }

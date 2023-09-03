@@ -8,4 +8,4 @@ export * from "./PortfolioPage/PortfolioPage.section";
 export * from "./MarketingHero/MarketingHero.section";
 export * from "./Steps/Steps.section";
 
-export * from "./ContactsHero/ContactsHero";
+export * from "./ContactsHero/ContactsHero.section";
