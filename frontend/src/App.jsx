@@ -8,6 +8,8 @@ import Marketing from "./pages/marketing";
 import Blog from "./pages/blog";
 import Audit from "./pages/audit";
 import Contacts from "./pages/contacts";
+import Qwiz1 from "./pages/qwiz1";
+import Qwiz2 from "./pages/qwiz2";
 
 const App = () => {
   return (
@@ -20,6 +22,8 @@ const App = () => {
         <Route path="/blog" element={<Blog />} />
         <Route path="/audit" element={<Audit />} />
         <Route path="/contacts" element={<Contacts />} />
+        <Route path="/qwiz1" element={<Qwiz1 />} />
+        <Route path="/qwiz2" element={<Qwiz2 />} />
       </Routes>
     </Layout>
   );
