@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import cn from "classnames";
 
 import { Button, Container, Switch } from "../../components";
@@ -10,6 +11,7 @@ import styles from "./Hero.module.scss";
 
 export const Hero = () => {
   const [isActive, setActive] = React.useState(false);
+  const navigate = useNavigate();
 
   return (
     <section className={cn(styles.hero)}>
@@ -30,7 +32,10 @@ export const Hero = () => {
               массового участия.
             </p>
 
-            <Button className={cn(styles.hero__button)}>
+            <Button
+              className={cn(styles.hero__button)}
+              onClick={() => navigate("/contacts")}
+            >
               Связаться с нами
             </Button>
           </div>
