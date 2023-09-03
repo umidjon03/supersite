@@ -73,7 +73,7 @@ export const PortfolioPage = () => {
       </div>
 
       <ul
-        className={cn(styles.filteredProjects, {
+        className={cn(styles.projects, {
           [styles["projects--2n"]]: filteredProjects.length % 2 === 0,
         })}
       >

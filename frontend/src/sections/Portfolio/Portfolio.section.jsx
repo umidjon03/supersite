@@ -54,7 +54,7 @@ export const Portfolio = ({ className, ...props }) => {
         <div className={cn(styles.portfolio__info)}>
           <Swiper
             className={cn(styles.portfolio__swiper)}
-            slidesPerView={1}
+            slidesPerView={"auto"}
             spaceBetween={50}
             navigation={{
               prevEl: navigationPrevRef.current,
@@ -81,6 +81,17 @@ export const Portfolio = ({ className, ...props }) => {
                   />
                 </SwiperSlide>
               ))}
+            {/* <SwiperSlide>
+              <Project
+                type={"internet_store"}
+                title={"Double B"}
+                description={
+                  "Задача организации, в особенности же рамки и место обучения кадров представляет собой интересный эксперимент проверки систем массового участия. "
+                }
+                image={"df"}
+                withNav
+              />
+            </SwiperSlide> */}
           </Swiper>
 
           <div className={cn(styles.portfolio__navigation)}>

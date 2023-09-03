@@ -7,7 +7,7 @@ export const Home = () => {
       <Services />
       <Portfolio />
       <Customers />
-      <Directions />
+      {/* <Directions /> */}
     </>
   );
 };
