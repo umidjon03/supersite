@@ -1,21 +1,20 @@
 import React from "react";
 
-import Marketing_Hero from "../sections/Marketing_Hero/Marketing_Hero";
+import { Container } from "../components";
+
+import { MarketingHero } from "../sections";
 import HowWeWork from "../sections/HowWeWork/HowWeWork";
 import MarketingService from "../sections/MarketingService/Services";
-import { Container } from "../components";
 
 function Marketing() {
   return (
-    <div>
+    <>
+      <MarketingHero />
       <Container>
-        <Marketing_Hero />
-      </Container>
-      <HowWeWork />
-      <Container>
+        <HowWeWork />
         <MarketingService />
       </Container>
-    </div>
+    </>
   );
 }
 
