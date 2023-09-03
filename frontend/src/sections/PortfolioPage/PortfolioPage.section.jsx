@@ -7,6 +7,9 @@ import { projectTypes } from "../../helpers/projectType.helper";
 
 import { Container, PageNav, Project } from "../../components";
 
+import constructorImage from "../../assets/images/portfolio.jpg";
+import { ReactComponent as Arrow } from "../../assets/icons/button-arrow.svg";
+
 import styles from "./PortfolioPage.module.scss";
 
 export const PortfolioPage = () => {
@@ -86,12 +89,38 @@ export const PortfolioPage = () => {
                   title={project.title}
                   description={project.info}
                   image={project.photo}
+                  button={"Перейти на сайт"}
+                  target="black"
+                  href={project.link}
                   reverse={index % 2 !== 0}
                 />
               </Container>
             </li>
           ))}
       </ul>
+
+      <div
+        className={cn(styles.projects__constructor, {
+          [styles["projects__constructor--2n"]]:
+            filteredProjects.length % 2 !== 0,
+        })}
+      >
+        <Container>
+          <Project
+            title="Здесь может быть ваш проект!"
+            description="Расскажите о проекте вкратце и другие слова офера"
+            image={constructorImage}
+            button={
+              <>
+                <span>Начать</span>
+                <Arrow />
+              </>
+            }
+            href={"/"}
+            reverse={filteredProjects.length % 2 !== 0}
+          />
+        </Container>
+      </div>
     </section>
   );
 };

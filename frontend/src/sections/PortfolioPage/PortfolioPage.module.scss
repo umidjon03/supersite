@@ -63,6 +63,14 @@
   }
 }
 
+.projects__constructor {
+  padding: 150px 0;
+
+  &--2n {
+    background-color: $white;
+  }
+}
+
 @media only screen and (max-width: 550px) {
   .portfolio__top__container {
     position: relative;
@@ -106,5 +114,10 @@
       background-size: 596px 397px;
       background-position: bottom;
     }
+  }
+
+  .projects__constructor {
+    padding-top: 36px;
+    padding-bottom: 50px;
   }
 }
