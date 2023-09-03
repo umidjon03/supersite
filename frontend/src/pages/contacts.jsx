@@ -4,9 +4,9 @@ import ContactsHero from "../sections/ContactsHero/ContactsHero";
 
 function Contacts() {
   return (
-    <div>
+    <>
       <ContactsHero />
-    </div>
+    </>
   );
 }
 

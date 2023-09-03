@@ -38,15 +38,6 @@
     }
   }
   .contacts-modal {
-    background-color: #fff;
-    width: 500px;
-    padding: 20px 40px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    z-index: 999;
-    transform: translate(350%, -50%);
-    transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     .modal-title {
       text-align: center;
       font-size: 36px;
@@ -88,9 +79,6 @@
       }
     }
   }
-  .contacts-modal-open {
-    transform: translate(-50%, -50%);
-  }
 }
 
 @media (max-width: 767px) {
@@ -98,18 +86,19 @@
     .contacts-bg {
       width: 400px;
     }
-    .contacts-modal{
+    .contacts-modal {
       padding: 20px 20px;
       width: 360px;
-      .modal-title{
+      .modal-title {
         font-size: 28px;
       }
-      .modal-txt{
+      .modal-txt {
         font-size: 14px;
       }
-      form{
+      form {
         gap: 6px;
-        input,textarea{
+        input,
+        textarea {
           font-size: 14px;
           padding: 10px;
         }
@@ -119,15 +108,15 @@
 }
 @media (max-width: 500px) {
   .contacts {
-    .contacts-modal{
+    .contacts-modal {
       width: 90%;
-      .modal-title{
+      .modal-title {
         font-size: 24px;
       }
-      .modal-txt{
+      .modal-txt {
         font-size: 13px;
       }
-      .close{
+      .close {
         font-size: 20px;
       }
     }
