@@ -1,0 +1,32 @@
+.qwiz2-section {
+  .dnone {
+    input {
+      display: none;
+    }
+  }
+  .link {
+    height: 44px;
+    // background-color: aqua;
+    z-index: 999;
+    input {
+      z-index: 999;
+      padding: 12px 20px;
+      border: none;
+      outline: none;
+      transform: scale(1);
+      border: 1px solid #969a9e7a;
+      border-radius: 4px;
+    }
+  }
+  .radio {
+    z-index: 999;
+    margin-top: 40px;
+    display: flex;
+    gap: 30px;
+    .input{
+      z-index: 999;
+      display: flex;
+      gap: 10px;
+    }
+  }
+}

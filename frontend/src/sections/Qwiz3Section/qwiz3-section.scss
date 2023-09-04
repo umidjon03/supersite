@@ -13,6 +13,13 @@
       }
       .input{
         align-items: flex-start;
+        label{
+          p{
+            margin-top: 5px;
+            font-size: 14px;
+            opacity: .9;
+          }
+        }
       }
     }
   }
