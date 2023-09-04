@@ -5,7 +5,6 @@ import { Button } from "../../components";
 
 import Prev from "../../assets/images/Vector 15 (Stroke)left.png";
 import Next from "../../assets/images/Vector 15 (Stroke)right.png";
-import Browser from "../../assets/images/Vectorbrowser.png";
 
 import "./qwiz5-section.scss";
 

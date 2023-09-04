@@ -13,6 +13,8 @@ import Qwiz2 from "./pages/qwiz2";
 import Qwiz3 from "./pages/qwiz3";
 import Qwiz4 from "./pages/qwiz4";
 import Qwiz5 from "./pages/qwiz5";
+import Qwiz6 from "./pages/qwiz6";
+import Qwiz7 from "./pages/qwiz7";
 
 const App = () => {
   return (
@@ -30,6 +32,8 @@ const App = () => {
         <Route path="/qwiz3" element={<Qwiz3 />} />
         <Route path="/qwiz4" element={<Qwiz4 />} />
         <Route path="/qwiz5" element={<Qwiz5 />} />
+        <Route path="/qwiz6" element={<Qwiz6 />} />
+        <Route path="/qwiz7" element={<Qwiz7 />} />
       </Routes>
     </Layout>
   );

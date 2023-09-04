@@ -1,0 +1,22 @@
+.qwiz7-section {
+  padding: 200px 20px;
+  transform: scale(1);
+  position: relative;
+  max-width: 600px;
+  .link {
+    text-decoration: none;
+  }
+  .qwiz7-bg {
+    position: absolute;
+    z-index: 0;
+    top: 120px;
+  }
+  .qwiz7-section-title {
+    transform: scale(1);
+    font-size: 40px;
+  }
+  .qwiz7-section-txt {
+    transform: scale(1);
+    max-width: 500px;
+  }
+}
