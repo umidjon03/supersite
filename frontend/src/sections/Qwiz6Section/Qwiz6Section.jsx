@@ -30,6 +30,7 @@ function Qwiz6Section() {
     reset,
     formState: { errors },
   } = useForm();
+
   return (
     <div className="qwiz6-section qwiz2-section">
       <div className={cn(styles.wrapper)}>

@@ -1,16 +1,13 @@
 import React from "react";
 
-import BlogTop from "../sections/BlogTop/BlogTop";
-import { Container } from "../components";
-import ArticleCards from "../sections/ArticleCards/ArticleCards";
+import { Articles } from "../sections";
 
-function Blog() {
+const Blog = () => {
   return (
-    <Container>
-      <BlogTop />
-      <ArticleCards />
-    </Container>
+    <>
+      <Articles />
+    </>
   );
-}
+};
 
 export default Blog;

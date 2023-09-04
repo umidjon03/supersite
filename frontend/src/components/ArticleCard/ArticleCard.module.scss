@@ -76,6 +76,10 @@
       height: calc((212 / 352) * (100vw - 60px) / 2);
     }
   }
+
+  .card__info {
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 550px) {

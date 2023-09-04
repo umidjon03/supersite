@@ -45,6 +45,7 @@
       rgba($color: $white, $alpha: 1),
       rgba($color: $white, $alpha: 0)
     );
+    mix-blend-mode: lighten;
   }
 
   &::after {
@@ -63,6 +64,7 @@
       rgba($color: $white, $alpha: 1),
       rgba($color: $white, $alpha: 0)
     );
+    mix-blend-mode: lighten;
   }
 }
 

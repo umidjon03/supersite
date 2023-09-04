@@ -16,10 +16,11 @@ export const PortfolioPage = () => {
   const [projects, setProjects] = React.useState([]);
   const [filteredProjects, setFilteredProjects] = React.useState(projects);
   const [typeNav, setTypeNav] = React.useState([]);
+  const [numbers, setNumbers] = React.useState([]);
 
   const { type } = useParams();
 
-  React.useState(() => {
+  React.useEffect(() => {
     (async () => {
       const { data: portfolio } = await getPortfolio();
       const { data: numbers } = await getTypes();
@@ -29,41 +30,32 @@ export const PortfolioPage = () => {
         setFilteredProjects(portfolio);
       }
       if (numbers) {
-        const keys = Object.keys(numbers);
-
-        const array = keys.map((key) => {
-          return {
-            type: key,
-            title: projectTypes[key].many,
-            count: numbers[key],
-            href: `/portfolio${key !== "all" ? `/${key}` : ""}`,
-            active: !type ? (key === "all" ? true : false) : type === key,
-          };
-        });
-
-        setTypeNav(array);
+        setNumbers(numbers);
       }
     })();
   }, []);
 
   React.useEffect(() => {
+    if (numbers) {
+      const keys = Object.keys(numbers);
+
+      const array = keys.map((key) => {
+        return {
+          type: key,
+          title: projectTypes[key].many,
+          count: numbers[key],
+          href: `/portfolio${key !== "all" ? `/${key}` : ""}`,
+          active: !type ? (key === "all" ? true : false) : type === key,
+        };
+      });
+
+      setTypeNav(array);
+    }
+
     if (!type) return setFilteredProjects(projects);
 
     setFilteredProjects(projects.filter((project) => project.type === type));
-  }, [type, projects]);
-
-  React.useEffect(() => {
-    const array = typeNav.map((item) => {
-      if (item.type === type) item.active = true;
-      else if (!type && item.type === "all") item.active = true;
-      else item.active = false;
-
-      return item;
-    });
-
-    setTypeNav(array);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [type]);
+  }, [type, projects, numbers]);
 
   return (
     <section className={cn(styles.portfolio)}>

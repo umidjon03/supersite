@@ -82,6 +82,7 @@
       rgba($color: $bg-gray, $alpha: 1),
       rgba($color: $bg-gray, $alpha: 0)
     );
+    mix-blend-mode: lighten;
   }
 
   &::after {
@@ -100,6 +101,7 @@
       rgba($color: $bg-gray, $alpha: 1),
       rgba($color: $bg-gray, $alpha: 0)
     );
+    mix-blend-mode: lighten;
   }
 }
 

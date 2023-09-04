@@ -7,6 +7,8 @@ export * from "./Blog/Blog.section";
 
 export * from "./PortfolioPage/PortfolioPage.section";
 
+export * from "./Articles/Articles.section";
+
 export * from "./MarketingHero/MarketingHero.section";
 export * from "./Steps/Steps.section";
 
