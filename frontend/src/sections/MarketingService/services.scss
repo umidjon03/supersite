@@ -1,11 +1,13 @@
 .services {
   padding: 80px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
-  .services-bg{
+  .services__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .services-bg {
     position: absolute;
     height: 100%;
     right: 0;
@@ -67,14 +69,16 @@
 }
 @media (max-width: 767px) {
   .services {
-    .services-bg{
+    .services__container {
+      flex-direction: column;
+    }
+    .services-bg {
       position: absolute;
       height: 600px;
       width: 400px;
       right: 0;
       top: 0;
     }
-    flex-direction: column;
     .services-img {
       order: 1;
       width: 85%;
@@ -88,7 +92,6 @@
 }
 @media (max-width: 500px) {
   .services {
-    
     .services-img {
       width: 100%;
     }

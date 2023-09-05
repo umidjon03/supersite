@@ -17,6 +17,7 @@ function Qwiz6Section() {
     const { data } = await postQwiz();
 
     if (data) {
+      window.location.reload();
       sessionStorage.clear();
     }
   };
