@@ -109,6 +109,7 @@
   .constructor__container {
     justify-content: space-between;
     gap: unset;
+    gap: 20px;
   }
 }
 
@@ -140,6 +141,7 @@
 
   .constructor__container {
     flex-direction: column;
+    gap: 30px;
   }
 
   .constructor__left {
