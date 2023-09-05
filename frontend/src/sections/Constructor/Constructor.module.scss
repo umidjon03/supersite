@@ -128,7 +128,7 @@
 }
 
 @media only screen and (max-width: 900px) {
-  $width: calc(100vw - 40px);
+  $width: calc(100vw * 0.7);
 
   .constructor {
     background-color: transparent;
@@ -148,20 +148,20 @@
     }
   }
 
-  .constructor {
-    &::before {
-      width: calc($width / 2 + 20px);
-    }
-  }
-
   .constructor__image {
     width: $width;
     height: calc($width * (580 / 704));
     margin: 0;
+    margin-bottom: 45px;
   }
 
   .constructor__info {
     text-align: center;
+  }
+
+  .constructor__title {
+    margin-right: auto;
+    margin-left: auto;
   }
 
   .constructor__button {
@@ -170,11 +170,16 @@
 }
 
 @media only screen and (max-width: 550px) {
+  $width: calc(100vw - 40px);
+
   .constructor {
     padding: 58px 0;
   }
 
   .constructor__image {
+    width: $width;
+    height: calc($width * (580 / 704));
+    margin: 0;
     margin-bottom: 36px;
   }
 
