@@ -1,5 +1,9 @@
 .qwiz1-section {
   padding: 0 0 100px;
+  max-width: 1490px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
   .form {
     .cards {
       display: flex;
@@ -10,7 +14,7 @@
         flex-direction: column;
         justify-content: center;
         gap: 10px;
-        z-index: 999;
+        z-index: 9;
         .img {
           height: 70px;
           img {
@@ -55,6 +59,11 @@
           width: 48%;
           align-items: center;
         }
+      }
+      .form-link{
+        display: block;
+        display: flex;
+        justify-content: center;
       }
     }
   }

@@ -1,5 +1,9 @@
 .qwiz2-section{
   padding: 0 20px 50px;
+  max-width: 1490px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
   .cards{
     display: flex;
     gap: 40px;
@@ -27,7 +31,7 @@
     margin-top: 80px;
     .link{
       text-decoration: none;
-      z-index: 999;
+      z-index: 9;
     }
     .prev{
       background-color: transparent;

@@ -7,9 +7,9 @@
   .link {
     height: 44px;
     // background-color: aqua;
-    z-index: 999;
+    z-index: 9;
     input {
-      z-index: 999;
+      z-index: 9;
       padding: 12px 20px;
       border: none;
       outline: none;
@@ -19,12 +19,12 @@
     }
   }
   .radio {
-    z-index: 999;
+    z-index: 9;
     margin-top: 40px;
     display: flex;
     gap: 30px;
     .input{
-      z-index: 999;
+      z-index: 9;
       display: flex;
       gap: 10px;
     }

@@ -1,8 +1,10 @@
 .qwiz7-section {
   padding: 200px 20px;
-  transform: scale(1);
+  max-width: 1490px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
   position: relative;
-  max-width: 600px;
   .link {
     text-decoration: none;
   }
