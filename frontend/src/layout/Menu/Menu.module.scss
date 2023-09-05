@@ -1,5 +1,8 @@
 @import "../../styles/variables";
 
+$height: calc(100vh * (945 / 988));
+$width: calc($height * (735 / 945));
+
 .menu {
   position: fixed;
   top: 0;
@@ -17,8 +20,36 @@
 
   background-image: url("../../assets/images/menu-pixels.svg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: $width $height;
   background-position: right 0 bottom 0;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    width: 100vw;
+    height: calc(100vh - $height + 10px);
+
+    background-color: #1d2434;
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    width: calc(100vw - $width + 10px);
+    height: 100vh;
+
+    background-color: #1d2434;
+  }
 }
 
 .menu__container {

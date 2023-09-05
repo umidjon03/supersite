@@ -1,56 +1,56 @@
-.offers{
+.offers {
   padding: 80px 20px;
-  .offers-title{
+  .offers-title {
     font-size: 50px;
     transform: scale(1);
   }
   position: relative;
-  .offers-bg{
+  .offers-bg {
     position: absolute;
     left: -20px;
     top: 0;
     z-index: 0;
     width: 70%;
   }
-  .offers-cards{
+  .offers-cards {
     display: flex;
     justify-content: space-between;
     margin-top: 80px;
-    .offers-cards-card{
+    .offers-cards-card {
       z-index: 5;
       width: 24%;
       background-color: #fff;
       padding: 10px 20px 20px;
-      .card-title{
+      .card-title {
         font-size: 24px;
         margin-bottom: 20px;
       }
-      .card-list{
-        .card-list-item{
+      .card-list {
+        .card-list-item {
           display: flex;
           align-items: center;
           gap: 10px;
-          .list-item-txt{
+          .list-item-txt {
             font-size: 15px;
-            margin:10px 0;
+            margin: 10px 0;
           }
-          .stroke{
+          .stroke {
             width: 16px;
             max-width: 16px;
             min-width: 16px;
           }
         }
       }
-      .card-bottom{
+      .card-bottom {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-top: 20px;
-        .card-cost{
+        .card-cost {
           font-size: 24px;
           font-weight: 400;
         }
-        .card-button{
+        .card-button {
           padding: 15px 25px;
         }
       }
@@ -58,18 +58,18 @@
   }
 }
 
-@media (max-width:1250px) {
-  .offers{
-    .offers-cards{
-      .offers-cards-card{
-        .card-title{
+@media (max-width: 1250px) {
+  .offers {
+    .offers-cards {
+      .offers-cards-card {
+        .card-title {
           font-size: 20px;
         }
-        .card-bottom{
-          .card-cost{
+        .card-bottom {
+          .card-cost {
             font-size: 20px;
           }
-          .card-button{
+          .card-button {
             padding: 12px 20px;
             font-size: 15px;
           }
@@ -78,21 +78,21 @@
     }
   }
 }
-@media (max-width:1100px) {
-  .offers{
-    .offers-cards{
+@media (max-width: 1100px) {
+  .offers {
+    .offers-cards {
       flex-wrap: wrap;
       gap: 36px;
-      .offers-cards-card{
+      .offers-cards-card {
         width: 48%;
-        .card-title{
+        .card-title {
           font-size: 24px;
         }
-        .card-bottom{
-          .card-cost{
+        .card-bottom {
+          .card-cost {
             font-size: 24px;
           }
-          .card-button{
+          .card-button {
             padding: 15px 30px;
             font-size: 16px;
           }
@@ -101,21 +101,21 @@
     }
   }
 }
-@media (max-width:960px) {
-  .offers{
-    .offers-cards{
+@media (max-width: 960px) {
+  .offers {
+    .offers-cards {
       flex-wrap: wrap;
       gap: 36px;
-      .offers-cards-card{
+      .offers-cards-card {
         width: 47%;
-        .card-title{
+        .card-title {
           font-size: 24px;
         }
-        .card-bottom{
-          .card-cost{
+        .card-bottom {
+          .card-cost {
             font-size: 24px;
           }
-          .card-button{
+          .card-button {
             padding: 15px 30px;
             font-size: 16px;
           }
@@ -124,27 +124,27 @@
     }
   }
 }
-@media (max-width:700px) {
-  .offers{
-    .offers-bg{
+@media (max-width: 700px) {
+  .offers {
+    .offers-bg {
       width: 90%;
     }
-    .offers-title{
+    .offers-title {
       font-size: 40px;
     }
-    .offers-cards{
+    .offers-cards {
       flex-wrap: wrap;
       gap: 36px;
-      .offers-cards-card{
+      .offers-cards-card {
         width: 47%;
-        .card-title{
+        .card-title {
           font-size: 20px;
         }
-        .card-bottom{
-          .card-cost{
+        .card-bottom {
+          .card-cost {
             font-size: 20px;
           }
-          .card-button{
+          .card-button {
             padding: 12px 20px;
             font-size: 15px;
           }
@@ -153,22 +153,22 @@
     }
   }
 }
-@media (max-width:660px) {
-  .offers{
-    .offers-cards{
+@media (max-width: 660px) {
+  .offers {
+    .offers-cards {
       flex-wrap: wrap;
       justify-content: center;
       gap: 20px;
-      .offers-cards-card{
+      .offers-cards-card {
         width: 67%;
-        .card-title{
+        .card-title {
           font-size: 24px;
         }
-        .card-bottom{
-          .card-cost{
+        .card-bottom {
+          .card-cost {
             font-size: 24px;
           }
-          .card-button{
+          .card-button {
             padding: 15px 25px;
             font-size: 16px;
           }
@@ -177,22 +177,22 @@
     }
   }
 }
-@media (max-width:560px) {
-  .offers{
-    .offers-cards{
+@media (max-width: 560px) {
+  .offers {
+    .offers-cards {
       flex-wrap: wrap;
       justify-content: center;
       gap: 36px;
-      .offers-cards-card{
+      .offers-cards-card {
         width: 87%;
-        .card-title{
+        .card-title {
           font-size: 24px;
         }
-        .card-bottom{
-          .card-cost{
+        .card-bottom {
+          .card-cost {
             font-size: 24px;
           }
-          .card-button{
+          .card-button {
             padding: 15px 25px;
             font-size: 16px;
           }
@@ -201,28 +201,28 @@
     }
   }
 }
-@media (max-width:450px) {
-  .offers{
-    .offers-bg{
+@media (max-width: 450px) {
+  .offers {
+    .offers-bg {
       width: 150%;
     }
-    .offers-title{
-      font-size: 36px;
+    .offers-title {
+      font-size: 22px;
     }
-    .offers-cards{
+    .offers-cards {
       flex-wrap: wrap;
       justify-content: center;
       gap: 36px;
-      .offers-cards-card{
+      .offers-cards-card {
         width: 100%;
-        .card-title{
+        .card-title {
           font-size: 24px;
         }
-        .card-bottom{
-          .card-cost{
+        .card-bottom {
+          .card-cost {
             font-size: 24px;
           }
-          .card-button{
+          .card-button {
             padding: 15px 25px;
             font-size: 16px;
           }

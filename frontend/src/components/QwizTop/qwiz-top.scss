@@ -1,27 +1,26 @@
-.qwiz-top{
-  padding: 50px 20px;
-  .qwiz-top-title{
+.qwiz-top {
+  padding: 50px 0px;
+  .qwiz-top-title {
     margin: 0;
     transform: scale(1);
   }
-  .qwiz-top-txt{
+  .qwiz-top-txt {
     max-width: 600px;
     font-size: 15px;
     transform: scale(1);
   }
-  .qwiz-top-step{
+  .qwiz-top-step {
     font-size: 18px;
     transform: scale(1);
-    span{
-      color: #45A6FF;
+    span {
+      color: #45a6ff;
     }
   }
 }
 
-
-.qwiz{
+.qwiz {
   position: relative;
-  .qwiz-bg{
+  .qwiz-bg {
     position: absolute;
     right: 0;
     top: -50px;
@@ -31,20 +30,20 @@
   }
 }
 
-@media (max-width:500px) {
-  .qwiz-top{
+@media (max-width: 500px) {
+  .qwiz-top {
     text-align: center;
-    .qwiz-top-title{
+    .qwiz-top-title {
       font-size: 24px;
-      br{
+      br {
         display: none;
       }
     }
-    .qwiz-top-txt{
+    .qwiz-top-txt {
       font-size: 14px;
       margin-top: 10px;
     }
-    .qwiz-top-step{
+    .qwiz-top-step {
       font-size: 16px;
     }
   }

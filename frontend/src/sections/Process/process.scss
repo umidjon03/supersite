@@ -1,18 +1,18 @@
-.proccess {
+.process {
   background-color: #fff;
   padding: 70px 20px;
-  .proccess-top {
+  .process-top {
     margin-bottom: 50px;
-    .proccess-top-title {
+    .process-top-title {
       font-size: 50px;
       margin-bottom: 20px;
       margin-top: 0;
     }
   }
-  .proccess-list {
+  .process-list {
     display: flex;
     justify-content: space-between;
-    .proccess-list-item {
+    .process-list-item {
       text-align: center;
       display: flex;
       justify-content: center;
@@ -48,58 +48,58 @@
 }
 
 @media (max-width: 1000px) {
-  .proccess {
-    .proccess-list {
+  .process {
+    .process-list {
       flex-wrap: wrap;
       row-gap: 40px;
-      .proccess-list-item {
+      .process-list-item {
         width: 45%;
       }
     }
   }
 }
 @media (max-width: 767px) {
-  .proccess {
-    .proccess-top {
-      .proccess-top-title {
+  .process {
+    .process-top {
+      .process-top-title {
         font-size: 40px;
       }
     }
-    .proccess-list {
+    .process-list {
       flex-wrap: wrap;
       row-gap: 30px;
-      .proccess-list-item {
+      .process-list-item {
         width: 46%;
       }
     }
   }
 }
 @media (max-width: 600px) {
-  .proccess {
-    .proccess-top {
-      .proccess-top-title {
+  .process {
+    .process-top {
+      .process-top-title {
         font-size: 32px;
       }
     }
-    .proccess-list {
+    .process-list {
       row-gap: 20px;
       justify-content: center;
-      .proccess-list-item {
+      .process-list-item {
         width: 70%;
       }
     }
   }
 }
 @media (max-width: 450px) {
-  .proccess {
-    .proccess-top {
-      .proccess-top-title {
+  .process {
+    .process-top {
+      .process-top-title {
         font-size: 30px;
       }
     }
-    .proccess-list {
+    .process-list {
       justify-content: center;
-      .proccess-list-item {
+      .process-list-item {
         width: 100%;
       }
     }
