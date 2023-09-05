@@ -4,6 +4,7 @@ export * from "./Portfolio/Portfolio.section";
 export * from "./Customers/Customers.section";
 export * from "./Directions/Directions.section";
 export * from "./Blog/Blog.section";
+export * from "./Constructor/Constructor.section";
 
 export * from "./PortfolioPage/PortfolioPage.section";
 

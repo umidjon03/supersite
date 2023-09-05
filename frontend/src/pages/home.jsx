@@ -5,6 +5,7 @@ import {
   Customers,
   Directions,
   Blog,
+  Constructor,
 } from "../sections";
 
 export const Home = () => {
@@ -16,6 +17,7 @@ export const Home = () => {
       <Customers />
       <Directions />
       <Blog />
+      <Constructor />
     </>
   );
 };
