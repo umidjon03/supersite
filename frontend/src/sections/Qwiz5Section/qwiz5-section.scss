@@ -7,9 +7,9 @@
   .link {
     height: 44px;
     // background-color: aqua;
-    z-index: 999;
+    z-index: 9;
     input {
-      z-index: 999;
+      z-index: 9;
       padding: 12px 20px;
       border: none;
       outline: none;
@@ -23,7 +23,11 @@
     margin-top: 40px;
     display: flex;
     gap: 30px;
+<<<<<<< HEAD
     .input{
+=======
+    .input {
+>>>>>>> caf05fc72d4b759816c8192b308e7c7e99da7b2f
       z-index: 9;
       display: flex;
       gap: 10px;
